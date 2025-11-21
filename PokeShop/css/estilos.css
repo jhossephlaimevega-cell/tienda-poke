@@ -1,0 +1,73 @@
+:root {
+    --color-acento: #FFCB05; /* Amarillo Pokémon */
+    --color-acento-claro: #3B4CCA; /* Azul Pokémon */
+    --color-texto: #000; /* Negro para contraste */
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+    background: linear-gradient(to bottom, var(--color-acento-claro), var(--color-acento));
+    color: var(--color-texto);
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#logo { 
+    height: 70px; 
+}
+
+h1 {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 2.5em;
+    color: var(--color-acento);
+    text-shadow: 3px 3px 0 #000;
+}
+
+#cuenta-carrito {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--color-acento);
+    color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: rgba(255,255,255,0.9);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--color-acento-claro);
+    font-weight: bold;
+}
+
+footer {
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.escondido {
+    display: none;
+}
