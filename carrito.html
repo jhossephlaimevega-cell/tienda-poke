@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - PokéShop</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <script src="js/carritoService.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+        <h1>Tu Carrito de Compras</h1>
+        <a href="carrito.html">
+            <img src="img/carrito.png" alt="carrito" id="cuenta-carrito">
+            <span id="cuenta-carrito">0</span>
+        </a>
+    </header>
+
+    <main>
+        <div id="carrito-container">
+            <p id="carrito-vacio">¡Ups! El carrito está vacío. <a href="index.html">¡Elige tus Pokémon!</a></p>
+        </div>
+
+        <section id="totales" class="escondido">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button id="comprar">Comprar</button>
+            <button id="reiniciar">Reiniciar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 PokéShop</p>
+    </footer>
+</body>
+</html>
